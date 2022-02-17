@@ -1,1 +1,41 @@
 Exercícios do curso de Algoritmo da plataforma do curso em vídeo do Gustavo Guanabara.
+
+--Estrutura de repetição em visualg:
+
+Exercício de sugestão aula 10:
+---------------------------------------------------------------------------------------------------------------------------------
+algoritmo "superContador"
+var
+   n, contador:inteiro
+inicio
+      repita
+            escreval
+            escreval("=================")
+            escreval("|    M E N U    |")
+            escreval("=================")
+            escreval("| [1] De 1 a 10 |")
+            escreval("| [2] De 10 a 1 |")
+            escreval("| [3] Sair      |")
+            escreval("=================")
+            leia(n)
+            se (n = 1) entao
+               contador <- 1
+               enquanto (contador <= 10) faca
+                        escreva(contador,".. ")
+                        contador <- contador + 1
+               fimenquanto
+            senao
+                 se(n = 2) entao
+                     contador <- 10
+                     enquanto (contador >= 1) faca
+                        escreva(contador,".. ")
+                        contador <- contador - 1
+                     fimenquanto
+                 senao
+                     se(n = 3) entao
+                     fimse
+                 fimse
+            fimse
+      ate (n = 3)
+fimalgoritmo
+---------------------------------------------------------------------------------------------------------------------------------
